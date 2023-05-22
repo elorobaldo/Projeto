@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
+    <section class="form-container">
+        <div class="container">
     <form method="post" action="/pessoas/criar">
+        <div class="input-single">
         <label>Nome:</label>
-        <input type="text" name="nome" placeholder="Digite"/> <br/>
+        <input class="input"  type="text" name="nome" /> <br/>
+        </div>
+        <div class="input-single">
         <label>Sobrenome:</label>
-        <input type="text" name="sobrenome" placeholder="Digite"/> <br/>
+        <input class="input"  type="text" name="sobrenome"/> <br/>
+        </div>
+        <div class="input-single">
         <label>Idade:</label>
-        <input type="number" name="idade" placeholder="Digite"/> 
-        <input type="submit" value="Enviar"/> 
-        
+        <input class="input"  type="number" name="idade"/> <br/>
+        </div>
+        <div class="btn"><input type="submit" value="Enviar"/> </div>
     </form>
+    </div>
+    </section>
 </body>
 </html>

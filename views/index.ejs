@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <section class="form-container">
+        <div class="container">
     <% pessoas.forEach((pessoa) => { %>
         <%= pessoa.nome %>
         <%= pessoa.sobrenome %>
@@ -15,5 +17,7 @@
         <%= pessoa.id %>
    <a href="pessoas/delete?id=<%= pessoa.id %>">Deletar</a>
     <% }) %>
+        </div>
+        </section>
 </body>
 </html>
